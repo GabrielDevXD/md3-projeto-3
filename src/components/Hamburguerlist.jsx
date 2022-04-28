@@ -3,17 +3,17 @@ import './hamburguer.css'
 import { hamburguer } from '../mocks/hamburguer';
 
 
-function hamburguerList() {
-  const [HamburguerSelecionado, setHamburguerSelecionado] = useState({}) ;
+function HamburguerList() {
+  const [hamburguerSelecionado, sethamburguerSelecionado] = useState({});
 
-  const adicionarItem = (HamburguerIndex) => {
-          const Hamburguer = { [HamburguerIndex]: Number(HamburguerSelecionado[HamburguerIndex] || 0) +1 }
-          setHamburguerSelecionado({ ...HamburguerSelecionado, ...Hamburguer});
-  
+  const adicionarItem = (hamburguerIndex) => {
+          const hamburguer = { [hamburguerIndex]: Number(hamburguerSelecionado[hamburguerIndex] || 0) +1 }
+          sethamburguerSelecionado({ ...hamburguerSelecionado, ...hamburguer});
   }
    return <div className="HamburguerList">
         {hamburguer.map((hamburguer, index) => ( 
     <div className="HamburguerListItem" key={`HamburgerList-${index}`}>
+      <div className="HamburguerListaItem__badge">{hamburguerSelecionado[index]|| 0}</div>
       <div>
         <div className="HamburguerListItem__nome">{hamburguer.nome}</div>
         <div className="HamburguerListItem__preco">{hamburguer.preco.toFixed(2)}</div>
@@ -28,4 +28,4 @@ function hamburguerList() {
   </div>
 }
 
-export default hamburguerList;
+export default HamburguerList;
