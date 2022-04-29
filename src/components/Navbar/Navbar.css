@@ -1,18 +1,4 @@
-.Background  {
-    position: relative;
-    background-image: radial-gradient(
-      farthest-corner at 40px 40px,
-      #ffffffa2 60%,
-      rgba(139, 204, 86, 0.541) 100%
-    );
-    min-height: calc(100vh - 60px);
-    margin: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    color: black;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  }
-  .Header {
+.Header {
     max-width: 1110px;
     margin: 0 auto 25px auto;
     position: relative;
