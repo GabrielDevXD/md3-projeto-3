@@ -47,7 +47,7 @@ useEffect(() => {
 
 
     ))}
-  {hamburguermodal && <HamburguerDetalhesModal hamburguer={hamburguermodal} closemodal={() => sethamburguermodal(false)} />}
+  {hamburguermodal && <HamburguerDetalhesModal hamburguer={hamburguermodal} closeModal={() => sethamburguermodal(false)} />}
 …
   </div>
 }

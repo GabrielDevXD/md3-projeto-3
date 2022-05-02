@@ -1,4 +1,4 @@
-.HamburgerDetalhesModal {
+.hamburgerDetalhesModal {
     font-family: "Exo";
     background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
@@ -11,53 +11,53 @@
     position: relative;
   }
   
-  .HamburgerDetalhesModal > div {
+  .hamburgerDetalhesModal > div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
   
-  .HamburgerDetalhesModal__titulo {
+  .hamburgerDetalhesModal__nome{
     font-size: 2em;
     font-weight: 700;
     line-height: 100%;
   }
   
-  .HamburgerDetalhesModal__descricao {
+  .hamburgerDetalhesModal__descricao {
     font-size: 1em;
   }
   
-  .HamburgerDetalhesModal__preco {
+  .hamburgerDetalhesModal__preco {
     color: darkviolet;
     font-size: 2.5em;
   }
-  
-  .HamburgerDetalhesModal__foto {
+   
+  .hamburguerDetalhesModal__foto{
     margin-right: -100px;
     z-index: 0;
   }
   
   @media (max-width: 400px) {
-    .HamburgerDetalhesModal {
+    .hamburgerDetalhesModal {
       width: 210px;
       height: 100vh;
     }
   
-    .HamburgerDetalhesModal__foto {
+    .hamburgerDetalhesModal__foto {
       height: 250px;
       margin-top: 50px;
       margin-right: -100px;
     }
   
-    .HamburgerDetalhesModal__preco {
+    .hamburgerDetalhesModal__preco {
       font-size: 2em;
     }
   
-    .HamburgerDetalhesModal__titulo {
+    .hamburgerDetalhesModal__nome {
       font-size: 1.5em;
     }
   
-    .HamburgerDetalhesModal__descricao {
+    .hamburguerDetalhesModal__descricao {
       font-size: 0.9em;
     }
   }

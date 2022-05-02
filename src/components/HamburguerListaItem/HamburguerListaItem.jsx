@@ -9,7 +9,7 @@ const removeButton = (canRender, index) =>
 Boolean(canRender) && (<button className="Acoes__remover" onClick={() => onRemove(index)}>remover</button>);
 
 
-    return ( <div className="HamburguerListItem"onClick={(e) => clickItem(hamburguer.id)}>   
+    return ( <div className="HamburguerListItem"onClick={(e) => clickItem(hamburguer._id)}>   
     {badgeCounter(quantidadeSelecionada, index)}
 <div>
   <div className="HamburguerListItem__nome">{hamburguer.nome}</div>
